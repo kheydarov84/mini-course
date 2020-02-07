@@ -8,6 +8,33 @@ const Section = styled.section`
     color: #fff;
 `
 
+const Header = styled.h1`
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+`
+
+const Subhead = styled.p`
+    font-size: 18px;
+    font-weight: 500;
+`
+
+const Button = styled.a`
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    cusor: pointer;
+    border-radius: 0;
+    background: #fff;
+    color: #333 !important; 
+    padding: 10px 20px;
+    font-size: 18pxl;
+    box-shadow: 0px 0px 0px 3px #473228,
+        -6px 6px #ef5f17,
+        -6px 6px 0px 3px #473228;
+`
+
 const Jumbotron = () => {
     return(
         <Section className="home-section--1">
@@ -15,8 +42,11 @@ const Jumbotron = () => {
                 <div className="row">
                     <div className="col col-sm-12 col-md-5">
                         <div className="pt-4 mt-4">
-                            <h1>React for Rails Developers</h1>
-                            <p>Supercharge your Ruby on Rails apps with react.js</p>
+                            <Header>React for Rails Developers</Header>
+                            <Subhead>Supercharge your Ruby on Rails apps with react.js</Subhead>
+                            <div className="cta-wrapper">
+                                <Button className="btn fancy-btn">Get Started </Button>
+                            </div>
                         </div>
                     </div>
                     <div className="col col-sm-12 col-md-7">

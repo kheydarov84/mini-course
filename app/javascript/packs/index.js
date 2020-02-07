@@ -11,7 +11,7 @@ import Home from '../components/Home/Home'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Home/>,
+    <Home />,
     document.body.appendChild(document.createElement('div')),
   )
 })
